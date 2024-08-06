@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 
 dbConnection();
 
-app.use('/api/v1/reservation', reservationRouter);
+app.use('https://rustic-cafe-backend.onrender.com', reservationRouter);
 
 // Error handling middleware should be defined after all routes
 app.use(errorMiddleware);
